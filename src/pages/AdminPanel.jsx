@@ -11,7 +11,28 @@ import TableComp from '../components/TableComp';
 import AdminHeader from '../components/AdminHeader';
 import { CardComp2, CardComp3, CardComp4 } from '../components/CardComp';
 
+import { vendors, users } from '../components/list';
+
+
 const AdminPanel = () => {
+    const vendor = vendors.map((vendor, index) => {
+        return (
+            <CardComp4
+                key={index}
+                {...vendor}
+            />
+
+        )
+    });
+
+    const user = users.map((user, index) => {
+        return (
+            <CardComp3
+                key={index}
+                {...user}
+            />
+        )
+    })
     return (
         <div>
             <div className="container-fluid">
@@ -220,18 +241,7 @@ const AdminPanel = () => {
                                     <div className="container">
                                         <AdminHeader />
                                         <div className="row g-4">
-                                            <div className="col-3">
-                                                <CardComp3 />
-                                            </div>
-                                            <div className="col-3">
-                                                <CardComp3 />
-                                            </div>
-                                            <div className="col-3">
-                                                <CardComp3 />
-                                            </div>
-                                            <div className="col-3">
-                                                <CardComp3 />
-                                            </div>
+                                            {user}
                                         </div>
 
                                     </div>
@@ -249,48 +259,25 @@ const AdminPanel = () => {
                                     <div class="tab-content" id="pills-tabContent">
                                         <div className="tab-pane fade show active" id="pills-verified" role="tabpanel" aria-labelledby="pills-verified-tab">
                                             <div className="container">
-                                                <div className="row g-4">
-                                                    <div className="col-3">
-                                                        <CardComp4 />
-                                                    </div>
-                                                    <div className="col-3">
-                                                        <CardComp4 />
-                                                    </div>
-                                                    <div className="col-3">
-                                                        <CardComp4 />
-                                                    </div>
-                                                    <div className="col-3">
-                                                        <CardComp4 />
-                                                    </div>
+                                                <div className="row">
+                                                    {vendor}
                                                 </div>
-                                            </div>
+                                            </div> 
                                         </div>
                                         <div class="tab-pane fade" id="pills-unverified" role="tabpanel" aria-labelledby="pills-unverified-tab">
                                             <div className="container">
-                                                <div className="row g-4">
-                                                    <div className="col-3">
-                                                        <CardComp4 />
-                                                    </div>
-                                                    <div className="col-3">
-                                                        <CardComp4 />
-                                                    </div>
-                                                    <div className="col-3">
-                                                        <CardComp4 />
-                                                    </div>
-                                                    <div className="col-3">
-                                                        <CardComp4 />
-                                                    </div>
+                                                <div className="row">
+                                                    {vendor}
                                                 </div>
-
                                             </div>
                                         </div>
-                                    </div>
 
+                                    </div>                               
                                 </div>
                                 <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                                     <div className="container-fluid">
                                         <AdminHeader />
-                                        
+
                                     </div>
                                 </div>
                             </div>

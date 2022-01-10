@@ -22,7 +22,7 @@ export const Popup = () => {
                         </Popover>
                     }
                 >
-                    <Button variant="secondary" className='rounded-circle p-3 fw-bold'>PEX</Button>
+                    <Button className='fw-bold avatar'>PEX</Button>
                 </OverlayTrigger>
             ))}
         </>

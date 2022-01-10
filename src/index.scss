@@ -40,13 +40,23 @@ button.accordion-button {
 
 }
 
+.tab-pane {
+    width: 80vw;
+}
+
+.avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (min-width: 768px) {
     .aform {
         width: 500px;
     }
-}
-
-.tab-pane{
-    width: 80vw;
 }

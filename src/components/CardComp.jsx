@@ -49,7 +49,7 @@ export const CardComp3 = (props) => {
             <div className="col-md-3">
                 <div className="card p-3 mb-3 border-0 shadow">
                     <div className="row justify-content-center text-center border-bottom">
-                        <h3 className="bg-warning w-25 p-2 rounded-circle">JD</h3>
+                        <h3 className="avatar">JD</h3>
                         <h6>{props.name}</h6>
                     </div>
                     <div className="row justify-content-center text-center border-bottom">

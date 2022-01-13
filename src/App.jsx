@@ -13,14 +13,14 @@ function App() {
     <div className="App">
     <Router>
       <Routes>
-          <Route exact path="/home" element={<HomePage/>} />
+          <Route exact path="/" element={<HomePage/>} />
           <Route exact path="/meals" element={<MealsPage/>} />
           <Route exact path="/vendors" element={<VendorsPage/>} />
-          <Route exact path="/" element={<AdminPanel/>} />
+          <Route exact path="/admin" element={<AdminPanel/>} />
           <Route exact path="/auth" element={<Auth/>} />
           <Route exact path="/profile" element={<ProfilePage/>} />
       </Routes> 
-    </Router>
+    </Router> 
     </div>
   );
 }

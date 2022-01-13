@@ -1,23 +1,22 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { propTypes } from 'react-bootstrap/esm/Image';
 
-export const CardComp = () => {
+export const CardComp = (props) => {
     return (
-        <div>
+        <>
             <div className="col-md-6 col-lg-3">
                 <Card className="shadow rounded">
-                    <Card.Img variant="top" src="./img/rice.jpg" />
+                    <Card.Img variant="top" src={props.img} />
                     <Card.Body>
-                        <Card.Title>Fried Rice</Card.Title>
+                        <Card.Title>{props.title}</Card.Title>
                         <Card.Text className="d-flex">
-                            <p className="text-muted me-2">800</p>
-                            <p className="text-muted">Killmanjaro</p>
+                            <p className="text-muted me-2">{props.price}</p>
+                            <p className="text-muted">{props.vendor}</p>
                         </Card.Text>
                     </Card.Body>
                 </Card>
             </div>
-        </div>
+        </>
     )
 }
 

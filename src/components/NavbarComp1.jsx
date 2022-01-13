@@ -19,7 +19,7 @@ const NavbarComp1 = () => {
 
     return (
         <div className="position-sticky sticky-top">
-            <Navbar className="navbar p-0 h-25 sticky-top shadow t-0" bg="light" expand="lg">
+            <Navbar className="navbar p-0 h-25 sticky-top shadow t-0" bg="dark" expand="lg">
                 <Container className="container-fluid px-md-5">
                     <Navbar.Brand href="#" className='text-warning fs-1 fw-bold'>PEX</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -29,8 +29,8 @@ const NavbarComp1 = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Link to="/meals" className="fw-bold text-decoration-none me-3 text-dark">MEALS</Link>
-                            <Link to="/vendors" className="fw-bold text-decoration-none me-3 text-dark">VENDORS</Link>
+                            <Link to="/meals" className="fw-bold text-decoration-none me-3 text-light">MEALS</Link>
+                            <Link to="/vendors" className="fw-bold text-decoration-none me-3 text-light">VENDORS</Link>
                         </Nav>
                         <Form className="d-flex">
                             {user ? (

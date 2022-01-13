@@ -51,3 +51,30 @@ export const users = [
         address: "no 4"
     },
 ]
+
+export const cards = [
+    {
+        img: ("../img/best-jollof-rice.jpg"),
+        title: "Jollof Rice",
+        price: 1800,
+        vendor: "The Promise"
+    },
+    {
+        img: "../img/Nigerian-stewed-beans-1.jpg",
+        title: "Stewed Beans",
+        price: 1200,
+        vendor: "Kilimanjaro"
+    },
+    {
+        img: "../img/nigerian-afang-soup-two-servings.png",
+        title: "Chicken",
+        price: 1000,
+        vendor: "Genesis"
+    },
+    {
+        img: "../img/ripe-plantain-porridge-with-scent-leafs-recipe-main-photo.jpg",
+        title: "Plantain",
+        price: 600,
+        vendor: "Jovit"
+    },
+]

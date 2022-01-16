@@ -1,12 +1,13 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
+
 export const CardComp = (props) => {
     return (
         <>
             <div className="col-md-6 col-lg-3">
                 <Card className="shadow rounded">
-                    <Card.Img variant="top" src={props.img} />
+                    <img src={props.src} alt={props.title} w-100 />
                     <Card.Body>
                         <Card.Title>{props.title}</Card.Title>
                         <Card.Text className="d-flex">
@@ -79,7 +80,7 @@ export const CardComp4 = (props) => {
 
                     </div>
                     <div className="row">
-                        <p>{props.businessName}</p>
+                        <p>{props.vendorName}</p>
                     </div>
                     <div className="row justify-content-between">
                         <div className="col-4 border border-2 border-warning rounded-3 text-center p-1  align-items-center d-flex flex-column">
@@ -102,4 +103,29 @@ export const CardComp4 = (props) => {
     )
 }
 
+export const CardComp5 = (props) => {
+    return (
+        <>
+            <div className="col-md-3">
+                <div className="card p-3 mb-3 border-0 shadow">
+                    <div className="row">
+                        <img src={props.src} alt="" />
+                    </div>
+                    <div className="row">
+                        <p>{props.vendorName}</p>
+
+                        <p className="text-muten">{props.rating}</p>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+export const CardComp6 = (props) => {
+    return (
+        <>
+            
+        </>
+    )
+}
 

@@ -1,27 +1,39 @@
 export const vendors = [
     {
-        businessName: "kilimanjaro",
+        vendorName: "kilimanjaro",
+        vendoraddress: "no 1",
         numberOfMenu: 5,
         numberOfMeals: 7,
-        numberOfOrders: 15
+        numberOfOrders: 15,
+        rating: 2.5,
+        vendorImg: ""
     },
     {
-        businessName: "Genesis",
+        vendorName: "Genesis",
+        vendoraddress: "no 2",
         numberOfMenu: 5,
         numberOfMeals: 5,
-        numberOfOrders: 5
+        numberOfOrders: 5,
+        rating: 5.0,
+        vendorImg: ""
     },
     {
-        businessName: "MarketSquare",
+        vendorName: "MarketSquare",
+        vendoraddress: "no 3",
         numberOfMenu: 8,
         numberOfMeals: 6,
-        numberOfOrders: 11
+        numberOfOrders: 11,
+        rating: 4.8,
+        vendorImg: ""
     },
     {
-        businessName: "HappyBite",
+        vendorName: "HappyBite",
+        vendoraddress: "no 4",
         numberOfMenu: 9,
         numberOfMeals: 6,
-        numberOfOrders: 10
+        numberOfOrders: 10,
+        rating: 4.5,
+        vendorImg: ""
     }
 ]
 
@@ -54,25 +66,25 @@ export const users = [
 
 export const cards = [
     {
-        img: ("../img/best-jollof-rice.jpg"),
+        src: "./img/best-jollof-rice.jpg",
         title: "Jollof Rice",
         price: 1800,
         vendor: "The Promise"
     },
     {
-        img: "../img/Nigerian-stewed-beans-1.jpg",
+        src: "./img/Nigerian-stewed-beans-1.jpg",
         title: "Stewed Beans",
         price: 1200,
         vendor: "Kilimanjaro"
     },
     {
-        img: "../img/nigerian-afang-soup-two-servings.png",
+        src: "./img/nigerian-afang-soup-two-servings.png",
         title: "Chicken",
         price: 1000,
         vendor: "Genesis"
     },
     {
-        img: "../img/ripe-plantain-porridge-with-scent-leafs-recipe-main-photo.jpg",
+        src: "./img/ripe-plantain-porridge-with-scent-leafs-recipe-main-photo.jpg",
         title: "Plantain",
         price: 600,
         vendor: "Jovit"

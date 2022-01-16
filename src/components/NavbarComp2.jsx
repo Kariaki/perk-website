@@ -44,10 +44,10 @@ const NavbarComp2 = () => {
                         </div>
                         <Form className="d-flex my-3">
                             <Link to="/auth" variant="warning" className="btn btn-warning rounded-pill me-2"><FaUserAlt /></Link>
-                            <Button variant="warning" className="rounded-pill">
+                            <button type="button" className="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <IoMdCart /> <Badge bg="transparent" className="text-dark fw-bold">0</Badge>
                                 <span className="visually-hidden">unread messages</span>
-                            </Button>
+                            </button>
                         </Form>
                     </Navbar.Collapse>
                 </Container>

@@ -39,14 +39,14 @@ const AdminPanel = () => {
                 <div className="row">
                     <nav id="sidebarMenu" className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse sticky-top">
                         <div className="position-sticky text-center">
-                            <Link to="#" class="navbar-brand fs-1 fw-bold text-dark" href="#">PEX</Link>
-                            <div class="d-flex align-items-start mt-3">
-                                <div class="nav flex-column nav-pills mx-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <button class="nav-link rounded-pill text-start mb-2 active" id="v-pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dashboard" type="button" role="tab" aria-controls="v-pills-dashboard" aria-selected="true"> <RiDashboardFill /> Dashboard </button>
-                                    <button class="nav-link rounded-pill text-start mb-2" id="v-pills-orders-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab" aria-controls="v-pills-orders" aria-selected="false"> <FaClipboardList /> Orders </button>
-                                    <button class="nav-link rounded-pill text-start mb-2" id="v-pills-customers-tab" data-bs-toggle="pill" data-bs-target="#v-pills-customers" type="button" role="tab" aria-controls="v-pills-customers" aria-selected="false"> <IoMdPeople /> Customers </button>
-                                    <button class="nav-link rounded-pill text-start mb-2" id="v-pills-vendors-tab" data-bs-toggle="pill" data-bs-target="#v-pills-vendors" type="button" role="tab" aria-controls="v-pills-vendors" aria-selected="false"> <RiBuildingFill /> Vendors </button>
-                                    <button class="nav-link rounded-pill text-start mb-2" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"> <IoMdPerson /> Profile </button>
+                            <Link to="#" className="navbar-brand fs-1 fw-bold text-dark" href="#">PEX</Link>
+                            <div className="d-flex align-items-start mt-3">
+                                <div className="nav flex-column nav-pills mx-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button className="nav-link rounded-pill text-start mb-2 active" id="v-pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dashboard" type="button" role="tab" aria-controls="v-pills-dashboard" aria-selected="true"> <RiDashboardFill /> Dashboard </button>
+                                    <button className="nav-link rounded-pill text-start mb-2" id="v-pills-orders-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab" aria-controls="v-pills-orders" aria-selected="false"> <FaClipboardList /> Orders </button>
+                                    <button className="nav-link rounded-pill text-start mb-2" id="v-pills-customers-tab" data-bs-toggle="pill" data-bs-target="#v-pills-customers" type="button" role="tab" aria-controls="v-pills-customers" aria-selected="false"> <IoMdPeople /> Customers </button>
+                                    <button className="nav-link rounded-pill text-start mb-2" id="v-pills-vendors-tab" data-bs-toggle="pill" data-bs-target="#v-pills-vendors" type="button" role="tab" aria-controls="v-pills-vendors" aria-selected="false"> <RiBuildingFill /> Vendors </button>
+                                    <button className="nav-link rounded-pill text-start mb-2" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"> <IoMdPerson /> Profile </button>
                                 </div>
                             </div>
                         </div>
@@ -55,11 +55,11 @@ const AdminPanel = () => {
                     <main className="col-md-9 ms-sm-auto col-lg-10 bg-light">
 
                         <div className="d-flex align-items-start">
-                            <div class="tab-content" id="v-pills-tabContent">
+                            <div className="tab-content" id="v-pills-tabContent">
                                 <div className="tab-pane fade show active" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
                                     <div className="container-fluid">
                                         <AdminHeader />
-                                        <div class="row">
+                                        <div className="row">
                                             <div className="col-md-9">
                                                 <div className="row">
                                                     <div className="col-4">
@@ -196,9 +196,9 @@ const AdminPanel = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                            <div class="container">
-                                                <div class="row g-4">
+                                        <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                            <div className="container">
+                                                <div className="row g-4">
                                                     <div className="col-3">
                                                         <CardComp2 />
                                                     </div>
@@ -252,15 +252,15 @@ const AdminPanel = () => {
                                 </div>
                                 <div className="tab-pane fade" id="v-pills-vendors" role="tabpanel" aria-labelledby="v-pills-vendors-tab">
                                     <AdminHeader />
-                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                        <li class="nav-item" role="presentation">
+                                    <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li className="nav-item" role="presentation">
                                             <button className="nav-link rounded-pill active" id="pills-verified-tab" data-bs-toggle="pill" data-bs-target="#pills-verified" type="button" role="tab" aria-controls="pills-verified" aria-selected="true">Verified</button>
                                         </li>
-                                        <li class="nav-item" role="presentation">
+                                        <li className="nav-item" role="presentation">
                                             <button className="nav-link rounded-pill" id="pills-unverified-tab" data-bs-toggle="pill" data-bs-target="#pills-unverified" type="button" role="tab" aria-controls="pills-unverified" aria-selected="false">Unverified</button>
                                         </li>
                                     </ul>
-                                    <div class="tab-content" id="pills-tabContent">
+                                    <div className="tab-content" id="pills-tabContent">
                                         <div className="tab-pane fade show active" id="pills-verified" role="tabpanel" aria-labelledby="pills-verified-tab">
                                             <div className="container">
                                                 <div className="row">
@@ -283,7 +283,7 @@ const AdminPanel = () => {
                                         <AdminHeader />
 
                                         <div class="container">
-                                            <div class="h-100 px-4 py-2 bg-light shadow rounded-3">
+                                            <div className="h-100 px-4 py-2 bg-light shadow rounded-3">
                                                 <div className="row">
                                                     <div className="col">
                                                         <h4>Admin Details</h4>

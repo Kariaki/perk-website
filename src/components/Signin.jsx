@@ -2,24 +2,21 @@ import React, { useState } from 'react';
 import { auth } from '../DB/firebase';
 import { Button } from 'react-bootstrap';
 
-import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 const Signin = () => {
 
-    const [signinEmail, setSigninEmail] = useState("");
-    const [signinPassword, setSigninPassword] = useState("");
+    const [signinEmail, setSignInEmail] = useState("");
+    const [signinPassword, setSignInPassword] = useState("");
 
-    const signin = async () => {
-        try {
-            const user = await createUserWithEmailAndPassword(
-                auth,
-                signinEmail,
-                signinPassword
-            )
-            console.log(user)
-        } catch (error) {
-            console.log(error.message);
-        }
+    const signIn = () => {
+        createUserWithEmailAndPassword(auth, signinEmail, signinPassword)
+        .then((userCred) => {
+            console.log('User Created', userCred.user);
+            signIn.reset();
+        })
+        .catch((err) => {
+            console.log(err.message);
+        }) 
     };
 
     return (
@@ -41,7 +38,7 @@ const Signin = () => {
                         className='form-control bg-white border-0 rounded w-100'
                         placeholder='Email'
                         onChange={(event) => {
-                            setSigninEmail(event.target.value);
+                            setSignInEmail(event.target.value);
                         }} />
                 </div>
             </div>
@@ -63,15 +60,15 @@ const Signin = () => {
                         className='form-control bg-white border-0 rounded w-100'
                         placeholder='Password'
                         onChange={(event) => {
-                            setSigninPassword(event.target.value);
+                            setSignInPassword(event.target.value);
                         }}
                     />
                 </div>
             </div>
 
-            <Button type="submit" onClick={signin} className="btn bg-warning fw-bold form-control border-0 mb-3 rounded-pill">
+            <Button type="submit" onClick={signIn} className="btn bg-warning fw-bold form-control border-0 mb-3 rounded-pill">
                 Sign Up
-            </Button>  
+            </Button>
         </>
     )
 }

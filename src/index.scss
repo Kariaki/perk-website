@@ -13,7 +13,15 @@ code {
 
 .home {
     height: 90vh;
-    background-image: url(/img/hero.png);
+    background-image: url(./img/hero.png);
+}
+
+.modal.custom .modal-dialog {
+    width: 20%;
+    position: fixed;
+    top: 11%;
+    right: 2%;
+    margin: 0;
 }
 
 .auth {

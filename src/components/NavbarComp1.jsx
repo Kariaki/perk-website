@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 
 import {
@@ -7,7 +10,6 @@ import {
     Container,
     Nav,
     Form,
-    Button,
     Badge
 } from 'react-bootstrap';
 import { FaUserAlt } from 'react-icons/fa';
@@ -15,6 +17,9 @@ import { IoMdCart } from 'react-icons/io';
 
 const NavbarComp1 = () => {
 
+    const [basicModal, setBasicModal] = useState(false);
+
+    const toggleShow = () => setBasicModal(!basicModal);
     const user = null;
 
     return (
@@ -42,11 +47,12 @@ const NavbarComp1 = () => {
                             ) : (
                                 <Link to="/auth" variant="warning" className="btn bg-warning rounded-pill me-2"><FaUserAlt /></Link>
                             )}
-
-                            <Button variant="warning" className="rounded-pill">
+                            <button type="button" className="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                                 <IoMdCart /> <Badge bg="transparent" className="text-dark fw-bold">0</Badge>
                                 <span className="visually-hidden">unread messages</span>
-                            </Button>
+                            </button>
+                            
+
                         </Form>
                     </Navbar.Collapse>
                 </Container>

@@ -11,76 +11,30 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.overlay {
+    background-color: rgba(0, 0, 0, .1);
+    height: 100%;
+}
+
 .home {
     height: 90vh;
-    background-image: url(./img/hero.png);
+    background-image: url(image/Group5.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    background-size: 60% 100%;
 }
 
-.modal.custom .modal-dialog {
-    width: 20%;
-    position: fixed;
-    top: 11%;
-    right: 2%;
-    margin: 0;
+.sec2 {
+    background-image: url(image/Ellipse10.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 15% 100%;
 }
 
-.auth {
-    height: 90vh;
-}
-
-.overlay {
-    height: 100%;
-    width: 100vw;
-    background-color: rgba($color: #000000, $alpha: .3);
-}
-
-.footer1 {
-
-    display: none;
-}
-
-.accordion-item {
-    border: none;
-}
-
-.accordion-button.collapsed::after {
-    background-color: #ffc107;
-    border-radius: 30px;
-}
-
-button.accordion-button {
-    background-color: #212529;
-    color: #ffc107;
-    border: none;
-}
-
-.navbar {
-    position: sticky;
-    top: 0;
-}
-
-#sidebarMenu {
-    height: 100vh;
-
-}
-
-.tab-pane {
-    width: 80vw;
-}
-
-.avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: yellow;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-    .aform {
-        width: 500px;
-    }
+.sec3 {
+    background-image: url(image/Ellipse9.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 15% 100%;
 }
